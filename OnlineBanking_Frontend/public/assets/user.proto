@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+message userDataReq {
+  string Name = 1;
+  string Email = 2;
+  string Password = 3;
+  string Phone = 4;
+}
+D

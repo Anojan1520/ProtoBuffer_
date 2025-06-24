@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+message UserRequestProto {
+  string Name = 1;
+  string Email = 2;
+  string Password = 3;
+  string Phone = 4;
+}

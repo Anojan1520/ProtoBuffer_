@@ -1,0 +1,22 @@
+[
+  {
+    "ContainingType": "ProtoBuffer_Testing.Controllers.UsersController",
+    "Method": "GetUsersAsBinary",
+    "RelativePath": "api/Users",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProtoBuffer_Testing.Controllers.UsersController",
+    "Method": "CreateNewUser",
+    "RelativePath": "api/Users/add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

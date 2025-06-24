@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\ProtoBuffer_Testing.props" />
+</Project>
