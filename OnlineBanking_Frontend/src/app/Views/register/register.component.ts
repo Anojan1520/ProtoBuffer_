@@ -67,6 +67,7 @@ export class RegisterComponent {
 
   // New method to fetch and decode multiple protobuf messages from backend binary stream
   fetchUsers() {
+     alert("poitu Browser Console parunga")
     this.http.get('http://localhost:5242/api/Users/', { responseType: 'arraybuffer' }).subscribe(buffer => {
       const users = this.decodeLengthDelimitedMessages(new Uint8Array(buffer));
       console.log('Decoded users: ', users);
