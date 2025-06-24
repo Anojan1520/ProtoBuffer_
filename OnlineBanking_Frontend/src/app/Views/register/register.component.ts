@@ -73,7 +73,7 @@ export class RegisterComponent implements OnInit {
   fetchUsers() {
     this.http.get('http://localhost:5242/api/Users/', { responseType: 'arraybuffer' }).subscribe(buffer => {
       const users = this.decodeLengthDelimitedMessages(new Uint8Array(buffer));
-      console.log('Decoded users anoja:', users);
+      console.log('Decoded users: ', users);
     });
   }
   private decodeLengthDelimitedMessages(bytes: Uint8Array): any[] {
