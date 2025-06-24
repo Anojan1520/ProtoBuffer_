@@ -125,3 +125,15 @@
 
 
 }
+
+.blink-warning {
+    color: red;
+    font-weight: 500;
+    animation: blink 1s step-start infinite;
+  }
+  
+  @keyframes blink {
+    50% {
+      color: black;
+    }
+  }
