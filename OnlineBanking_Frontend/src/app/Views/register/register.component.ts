@@ -12,7 +12,7 @@ import { HttpClient } from '@angular/common/http';
   templateUrl: './register.component.html',
   styleUrls: ['./register.component.css']
 })
-export class RegisterComponent implements OnInit {
+export class RegisterComponent {
   userForm: FormGroup;
 
   // Your protobuf message type
@@ -30,11 +30,7 @@ export class RegisterComponent implements OnInit {
       phone: ['', [Validators.required, Validators.minLength(9)]],
     });
   }
-
- ngOnInit(): void {
-  this.fetchUsers();
-   
- }
+  
   onSubmit() {
     if (this.userForm.invalid) {
       console.warn("Form is invalid");
